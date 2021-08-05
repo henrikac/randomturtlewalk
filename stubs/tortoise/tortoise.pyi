@@ -1,0 +1,6 @@
+from typing import Tuple
+
+
+class Tortoise:
+    def __init__(self, shape: str, visible: bool) -> None: ...
+    def step(self, move: Tuple[int, int]) -> None: ...
