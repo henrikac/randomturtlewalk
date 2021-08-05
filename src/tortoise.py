@@ -1,3 +1,7 @@
+"""A custom turtle.Turtle.
+
+Author: Henrik Abel Christensen
+"""
 import turtle
 from typing import Tuple
 

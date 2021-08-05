@@ -1,3 +1,7 @@
+"""A Python turtle that does a random walk.
+
+Author: Henrik Abel Christensen
+"""
 import random
 from turtle import Screen
 
