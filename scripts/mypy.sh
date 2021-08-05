@@ -1,1 +1,1 @@
-mypy -m src
+cd src && mypy main.py
