@@ -1,0 +1,26 @@
+name: "Code style checking"
+
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Code-Style-Checking:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          pip install mypy pylint
+      - name: pylint
+        run: |
+          pylint src
+      - name: mypy
+        run: |
+          cd src && mypy main.py
