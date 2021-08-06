@@ -19,3 +19,26 @@ pip install -r requirements.txt
 
 ## Usage
 To send the turtle on its random walk run `python src/main.py`.
+
+#### Hide turtle
+```terminal
+python src/main.py --hide
+```
+
+#### Set number of steps
+```terminal
+python src/main.py -s 250
+```
+or
+```terminal
+python src/main.py --steps 250
+```
+
+#### Set the range of the turtles choices
+```terminal
+python src/main.py -r -10 10
+```
+or
+```terminal
+python src/main.py --range -10 10
+```
